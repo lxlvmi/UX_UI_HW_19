@@ -1,0 +1,255 @@
+
+      body {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      .welcome_message, 
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #ffffff;
+      }
+
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        font-family:futura;
+        font-size: 25px;
+      }
+            
+      li b {
+        display: inline-block;
+        width: 125px;
+        height: 125px;
+        border: 1px solid #000;   
+        vertical-align: top;
+      }
+
+      li a:hover {
+        background-color: #E86C56;
+      }
+     
+      li b::content {
+        background-color:grey;
+      }
+      p {
+        font-family: futura;
+        font-size: 33px;
+      }
+
+      h2 {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        font-family:futura;
+        font-size: 25px;
+      }
+      .smalllogo{
+        background-color: white;
+        width: 10%;
+        display: inline-block;
+        margin-left: 50px;
+      }
+
+      .flexbox1 {
+        display: flex;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        }
+
+    .flexbox1 > div {
+        background-color: white;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .flexbox2 {
+        display: flex;
+              background-color: white;
+              align-items: center;
+              justify-content: center;
+              width: 85%;
+              display: inline-block;
+              margin: 10px auto;
+      }
+      .navbar {
+        display: flex;
+              background-color: white;
+              align-items: center;
+              justify-content: center;
+      }
+      h1{
+          font-size: 50px;
+          text-align: center;
+          font-family: futura;
+      }
+      .preview_text{
+          font-size: 20px;
+          text-align:center;
+          font-family: futura;
+      }
+      .welcome_message, .intro{
+          font-size: 60px;
+          text-align:center;
+          font-family: futura;
+          width: 75%;
+          margin: 50px auto;
+          
+      }
+
+      h2{
+          text-align:center;
+          font-size: 25px;
+          font-family: futura;
+          text-align: center;
+      }
+
+        .projecttext {
+          font-family: futura;
+          margin: 50px;
+          padding: 20px;
+          font-size: 25px;
+        }
+
+        .headshot, .resumebutton, .projectimage {
+          display: flex;
+          justify-content: center;
+        }
+
+        .headshot {
+          margin: 125px;
+
+        }
+
+        .footer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .resumebutton button {
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            padding: 15px;
+            margin: 10px;
+        }
+          /* Skills list section */ 
+
+        .skills button {
+          Display: flex;
+          align-items:flex-start;
+          justify-content: space-around;
+          background-color: rgba(84, 186, 168, 1);
+          color: white;
+          font-size: 25px;
+          padding: 15px;
+          font-weight: bold;
+          margin: 10px;
+          width: 95%;
+        }
+
+        .skills_list1 {
+          grid-area: skills_list1;
+        }
+        
+        .skills_list2 {
+          grid-area: skills_list2;
+        }       
+        
+        .skills_list3 {
+          grid-area: skills_list3;
+        }        
+        
+        .skills_list4 {
+          grid-area: skills_list4;
+        }
+
+        .skills {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-areas: "skills_list1 skills_list2 skills_list3 skills_list4";
+        }
+      
+        /* hover state code */ 
+        .projectimage {
+         position: relative;
+        }
+        
+        .project_image {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+        /* update background color and shape*/
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: #00000057;
+          border-radius: 90%;
+          font-family: futura;
+          font-size: 200px;
+        }
+        
+        .projectimage:hover .overlay {
+          opacity: 1;
+        }
+        
+        /* hover state code */ 
+        .hover_text {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+
+        .projects{
+            margin: 200px;
+
+        }
+
+        @media only screen and (max-width: 800px){
+        
+        .skills {
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+             "skills_list1 skills_list2"
+             "skills_list3 skills_list4";
+        }
+      }
+
+
+
