@@ -98,16 +98,19 @@
               align-items: center;
               justify-content: center;
       }
+
       h1{
           font-size: 50px;
           text-align: center;
           font-family: futura;
       }
+
       .preview_text{
           font-size: 20px;
           text-align:center;
           font-family: futura;
       }
+
       .welcome_message, .intro{
           font-size: 60px;
           text-align:center;
@@ -154,7 +157,13 @@
             padding: 15px;
             margin: 10px;
         }
-          /* Skills list section */ 
+          /* Skills list section */
+
+        .skillsheader {
+          margin-bottom: 250px;
+          margin-top: -150px;
+        }
+
 
         .skills button {
           Display: flex;
@@ -167,7 +176,16 @@
           font-weight: bold;
           margin: 10px;
           width: 95%;
-          cursor:pointer;
+          padding:7px 20px;
+          text-transform:uppercase;
+          letter-spacing:2px;
+          text-align:center;
+          line-height:25px;
+          background:#FFF;
+          color:#F58549;
+          border:4px solid;
+          border-image-source: linear-gradient(to right,#08fdd8,#F58549, red);
+          border-image-slice:1;
         }
 
         .skills_list1 {
@@ -192,6 +210,16 @@
           grid-template-areas: "skills_list1 skills_list2 skills_list3 skills_list4";
         }
       
+        .skills {
+          position:relative;
+          top:50%;
+          left:50%;
+          transform:translate(-50%,-50%);
+          text-align:center;
+          color:#CCC9DC;
+        }
+
+        
         /* hover state code */ 
         .projectimage {
          position: relative;
