@@ -120,6 +120,18 @@
           
       }
 
+      .animation{
+          animation: waive 5 1s;
+          transform-origin: bottom center;
+      }
+
+      @keyframes waive {
+        0%{transform:rotate(0deg);}
+        50%{transform:rotate(20deg);}
+        100%{transform:rotate(0deg);}
+      }
+
+
       h2{
           text-align:center;
           font-size: 25px;
@@ -159,7 +171,7 @@
         }
           /* Skills list section */
 
-        .skillsheader {
+        .skillsheader{
           margin-bottom: 250px;
           margin-top: -150px;
         }
@@ -266,6 +278,7 @@
 
         .projects{
             margin: 200px;
+            font-family: futura;
 
         }
 
